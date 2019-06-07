@@ -1,0 +1,52 @@
+body{
+  margin: 0;
+  display: grid;
+  grid-template-areas:
+                        'header header header header'
+                        'navbar navbar navbar navbar'
+                        'section section section section'
+                        'aside aside aside aside'
+                        'footer footer footer footer';
+grid-template-rows: 70vh 50vh 40vh 40vh 20vh;
+
+}
+
+header{
+    background-image: url(img/banner.png);
+    display: flex;
+    grid-area: header;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    align-items: flex-end;
+}
+
+header div{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: flex-end;
+  
+}
+
+nav{
+    background-color: black;
+    display: flex;
+    grid-area: navbar;
+    justify-content: flex-end;
+}
+
+section{
+    background-color: brown;
+    grid-area: section;
+}
+
+aside{
+background-color: chartreuse;
+grid-area: aside;
+}
+
+footer{
+background-color: red;
+grid-area: footer;
+}
